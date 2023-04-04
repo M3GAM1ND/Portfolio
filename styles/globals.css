@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+}
+nav {
+  margin: 100px 100px 0;
+  font-size: 50px;
+  display: flex;
+}
+.intro {
+  text-align: center;
+  margin: 0 100px 200px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.footer {
+  text-align: center;
+  margin: 0 100px 20px;
+  font-size: 18px;
+}
+.lang {
+  font-size: 26px;
+}
+.logo {
+  width: 50%;
+  text-decoration: none;
+}
+.icon {
+  display: flex;
+  width: 100%;
+  column-gap: 70px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.link {
+  text-decoration: none;
+  color: var(--color);
+}
+canvas {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+}
+.introLink {
+  margin: 40px;
+}
+.dark {
+  color: #04f404;
+}
+:root {
+  --color: #000000;
+}
+.darkCanvas {
+  background-color: #000000;
+}
+.notFound {
+  font-size: 200px;
+  text-align: center;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  padding: 20px;
+  border-radius: 5px;
+}
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 40px;
+}
+.introLink:hover {
+  text-decoration: line-through;
+}
